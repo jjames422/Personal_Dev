@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run format && npm run lint",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,mdx,json}\"",
-    "format": "bun run prettier",
-    "lint": "next lint"
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,mdx,json}\"",
+    "lint": "next lint --fix"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -31,10 +31,15 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/preset-react": "^7.25.9",
     "eslint": "^8.56.0",
-    "eslint-config-next": "^14.0.4",
-    "prettier": "^3.3.2",
+    "eslint-config-next": "^15.0.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "sharp": "0.33.1"
   }
 }
+zk05svs@TerminalPythonExchange:~
