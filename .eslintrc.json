@@ -1,3 +1,12 @@
-{
-  "extends": "next/core-web-vitals"
-}
+module.exports = {
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"  // Enables eslint-plugin-prettier
+  ],
+  plugins: ["react", "prettier"],
+  rules: {
+    "react/no-unescaped-entities": "error",
+    "prettier/prettier": "error" // Flags Prettier issues as ESLint errors
+  }
+};
