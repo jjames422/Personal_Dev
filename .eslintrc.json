@@ -1,12 +1,12 @@
-module.exports = {
-  extends: [
+{
+  "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"  // Enables eslint-plugin-prettier
+    "plugin:prettier/recommended"
   ],
-  plugins: ["react", "prettier"],
-  rules: {
+  "plugins": ["react", "prettier"],
+  "rules": {
     "react/no-unescaped-entities": "error",
-    "prettier/prettier": "error" // Flags Prettier issues as ESLint errors
+    "prettier/prettier": "error"
   }
-};
+}
